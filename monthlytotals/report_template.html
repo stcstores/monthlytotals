@@ -1,0 +1,83 @@
+<html moznomarginboxes mozdisallowselectionprint>
+<style>
+    body {
+        text-align: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    th, td {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        border: solid 1px black;
+        margin: 0;
+        text-align: center;
+        font-family: monospace;
+    }
+
+    table {
+        border-collapse: collapse;
+        display: inline-block;
+    }
+
+    .totals {
+        font-weight: bold;
+    }
+
+    .negative {
+        color: red;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .date_field {
+        text-align: left;
+    }
+
+    .currency{
+        text-align: right;
+    }
+
+    @page{
+         size: A4;
+         margin: 0;
+    }
+
+    @media print {
+        html, body {
+            width;
+            210mm;
+            297mm;
+        }
+    }
+</style>
+    <div class="content">
+        <h1>Daily Totals Report For {{ date.strftime('%B %Y') }}</h1>
+        <table>
+            <tr>
+                <th>Date</th>
+                {% for currency in currencies -%}
+                    <th>{{ currency }}</th>
+                {%- endfor %}
+                <th>Total</th>
+                <th>EPOS</th>
+            </tr>
+            {% for data in daily_data -%}
+                <tr>
+                    <td class="date_field">{{ data['Day'].strftime('%a %d %b') }}</td>
+                    {% for currency in currencies -%}
+                        <td class="currency">{% if data[currency] == 0 %}<span class="negative">&mdash;</span>{% else %}{{ "{:,.2f}".format(data[currency]) }}{% endif %}</td>
+                    {%- endfor %}
+                    <td class="currency">{{ "{:,.2f}".format(data.Total) }}</td>
+                    <td class="currency">{{ "{:,.2f}".format(data.EPOS) }}</td>
+                </tr>
+            {%- endfor %}
+            <tr class="totals">
+                <th>TOTALS</th>
+                {% for amount in totals -%}
+                    <td class="currency">{{ "{:,.2f}".format(amount) }}</td>
+                {%- endfor %}
+            </tr>
+        </table>
+    </div>
+</html>
