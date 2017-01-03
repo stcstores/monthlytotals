@@ -1,0 +1,225 @@
+<html moznomarginboxes mozdisallowselectionprint>
+<style>
+    body {
+        text-align: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    th, td {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        border: solid 1px black;
+        margin: 0;
+        text-align: center;
+        font-family: monospace;
+    }
+
+    table {
+        border-collapse: collapse;
+        display: inline-block;
+    }
+
+    .totals {
+        font-weight: bold;
+    }
+
+    .negative {
+        color: red;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .date_field {
+        text-align: left;
+    }
+
+    .currency{
+        text-align: right;
+    }
+
+    @page{
+         size: A4;
+         margin: 0;
+    }
+
+    @media print {
+        html, body {
+            width;
+            210mm;
+            297mm;
+        }
+    }
+</style>
+    <div class="content">
+        <h1>Daily Totals Report For December 2016</h1>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>GBP</th><th>USD</th><th>AUD</th><th>CAD</th><th>EUR</th><th>JPY</th>
+                <th>Total</th>
+                <th>EPOS</th>
+            </tr>
+            <tr>
+                    <td class="date_field">Thu 01 Dec</td>
+                    <td class="currency">2,812.85</td><td class="currency">579.98</td><td class="currency">350.39</td><td class="currency">183.14</td><td class="currency">2,528.22</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">6,454.58</td>
+                    <td class="currency">102.14</td>
+                </tr><tr>
+                    <td class="date_field">Fri 02 Dec</td>
+                    <td class="currency">2,910.00</td><td class="currency">693.52</td><td class="currency">272.03</td><td class="currency">128.63</td><td class="currency">2,361.99</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">6,366.17</td>
+                    <td class="currency">82.37</td>
+                </tr><tr>
+                    <td class="date_field">Sat 03 Dec</td>
+                    <td class="currency">2,727.26</td><td class="currency">870.68</td><td class="currency">194.00</td><td class="currency">110.19</td><td class="currency">2,452.54</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">6,354.67</td>
+                    <td class="currency">93.58</td>
+                </tr><tr>
+                    <td class="date_field">Sun 04 Dec</td>
+                    <td class="currency">2,809.55</td><td class="currency">931.00</td><td class="currency">270.12</td><td class="currency">45.52</td><td class="currency">3,054.97</td><td class="currency">693.98</td>
+                    <td class="currency">7,805.14</td>
+                    <td class="currency">0.00</td>
+                </tr><tr>
+                    <td class="date_field">Mon 05 Dec</td>
+                    <td class="currency">3,170.36</td><td class="currency">945.85</td><td class="currency">388.52</td><td class="currency">122.98</td><td class="currency">3,132.92</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">7,760.63</td>
+                    <td class="currency">21.73</td>
+                </tr><tr>
+                    <td class="date_field">Tue 06 Dec</td>
+                    <td class="currency">2,992.53</td><td class="currency">693.73</td><td class="currency">403.37</td><td class="currency">116.92</td><td class="currency">3,067.33</td><td class="currency">4,134.00</td>
+                    <td class="currency">11,407.88</td>
+                    <td class="currency">85.31</td>
+                </tr><tr>
+                    <td class="date_field">Wed 07 Dec</td>
+                    <td class="currency">3,114.41</td><td class="currency">716.35</td><td class="currency">635.03</td><td class="currency">102.98</td><td class="currency">3,047.70</td><td class="currency">348.50</td>
+                    <td class="currency">7,964.97</td>
+                    <td class="currency">17.48</td>
+                </tr><tr>
+                    <td class="date_field">Thu 08 Dec</td>
+                    <td class="currency">3,051.99</td><td class="currency">887.97</td><td class="currency">125.99</td><td class="currency">256.23</td><td class="currency">2,580.80</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">6,902.98</td>
+                    <td class="currency">64.96</td>
+                </tr><tr>
+                    <td class="date_field">Fri 09 Dec</td>
+                    <td class="currency">2,626.88</td><td class="currency">770.53</td><td class="currency">210.54</td><td class="currency">167.38</td><td class="currency">1,996.52</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">5,771.85</td>
+                    <td class="currency">93.16</td>
+                </tr><tr>
+                    <td class="date_field">Sat 10 Dec</td>
+                    <td class="currency">2,935.19</td><td class="currency">599.88</td><td class="currency">153.78</td><td class="currency">131.77</td><td class="currency">2,288.50</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">6,109.12</td>
+                    <td class="currency">93.62</td>
+                </tr><tr>
+                    <td class="date_field">Sun 11 Dec</td>
+                    <td class="currency">3,357.17</td><td class="currency">559.18</td><td class="currency">283.73</td><td class="currency">125.67</td><td class="currency">2,738.52</td><td class="currency">348.99</td>
+                    <td class="currency">7,413.26</td>
+                    <td class="currency">45.40</td>
+                </tr><tr>
+                    <td class="date_field">Mon 12 Dec</td>
+                    <td class="currency">3,022.89</td><td class="currency">581.57</td><td class="currency">279.71</td><td class="currency">201.19</td><td class="currency">2,673.92</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">6,759.28</td>
+                    <td class="currency">25.23</td>
+                </tr><tr>
+                    <td class="date_field">Tue 13 Dec</td>
+                    <td class="currency">2,905.46</td><td class="currency">586.65</td><td class="currency">153.80</td><td class="currency">129.81</td><td class="currency">2,367.63</td><td class="currency">1,603.00</td>
+                    <td class="currency">7,746.35</td>
+                    <td class="currency">65.88</td>
+                </tr><tr>
+                    <td class="date_field">Wed 14 Dec</td>
+                    <td class="currency">2,606.49</td><td class="currency">436.82</td><td class="currency">66.26</td><td class="currency">63.86</td><td class="currency">2,153.63</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">5,327.06</td>
+                    <td class="currency">85.42</td>
+                </tr><tr>
+                    <td class="date_field">Thu 15 Dec</td>
+                    <td class="currency">2,582.46</td><td class="currency">491.99</td><td class="currency">111.69</td><td class="currency">148.44</td><td class="currency">1,617.86</td><td class="currency">1,710.00</td>
+                    <td class="currency">6,662.44</td>
+                    <td class="currency">79.39</td>
+                </tr><tr>
+                    <td class="date_field">Fri 16 Dec</td>
+                    <td class="currency">2,055.95</td><td class="currency">514.18</td><td class="currency">217.95</td><td class="currency">298.15</td><td class="currency">879.97</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">3,966.20</td>
+                    <td class="currency">168.03</td>
+                </tr><tr>
+                    <td class="date_field">Sat 17 Dec</td>
+                    <td class="currency">2,190.33</td><td class="currency">398.17</td><td class="currency">251.28</td><td class="currency">100.30</td><td class="currency">972.06</td><td class="currency">1,237.00</td>
+                    <td class="currency">5,149.14</td>
+                    <td class="currency">140.97</td>
+                </tr><tr>
+                    <td class="date_field">Sun 18 Dec</td>
+                    <td class="currency">2,375.34</td><td class="currency">499.83</td><td class="currency">86.27</td><td class="currency">356.12</td><td class="currency">1,174.88</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">4,492.44</td>
+                    <td class="currency">72.20</td>
+                </tr><tr>
+                    <td class="date_field">Mon 19 Dec</td>
+                    <td class="currency">2,339.85</td><td class="currency">351.02</td><td class="currency">227.50</td><td class="currency">58.62</td><td class="currency">1,220.11</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">4,197.10</td>
+                    <td class="currency">50.05</td>
+                </tr><tr>
+                    <td class="date_field">Tue 20 Dec</td>
+                    <td class="currency">1,840.84</td><td class="currency">327.47</td><td class="currency">201.13</td><td class="currency">89.25</td><td class="currency">867.23</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">3,325.92</td>
+                    <td class="currency">70.92</td>
+                </tr><tr>
+                    <td class="date_field">Wed 21 Dec</td>
+                    <td class="currency">833.59</td><td class="currency">389.26</td><td class="currency">73.42</td><td class="currency">130.30</td><td class="currency">770.87</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">2,197.44</td>
+                    <td class="currency">179.42</td>
+                </tr><tr>
+                    <td class="date_field">Thu 22 Dec</td>
+                    <td class="currency">886.20</td><td class="currency">195.36</td><td class="currency">102.13</td><td class="currency">137.19</td><td class="currency">806.82</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">2,127.70</td>
+                    <td class="currency">145.78</td>
+                </tr><tr>
+                    <td class="date_field">Fri 23 Dec</td>
+                    <td class="currency">573.54</td><td class="currency">205.67</td><td class="currency">44.68</td><td class="currency">140.15</td><td class="currency">521.87</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">1,485.91</td>
+                    <td class="currency">181.74</td>
+                </tr><tr>
+                    <td class="date_field">Sat 24 Dec</td>
+                    <td class="currency">441.50</td><td class="currency">196.65</td><td class="currency">33.43</td><td class="currency">38.00</td><td class="currency">368.10</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">1,077.68</td>
+                    <td class="currency">231.19</td>
+                </tr><tr>
+                    <td class="date_field">Sun 25 Dec</td>
+                    <td class="currency">496.86</td><td class="currency">232.80</td><td class="currency">29.56</td><td class="currency">63.46</td><td class="currency">613.09</td><td class="currency">1,236.00</td>
+                    <td class="currency">2,671.77</td>
+                    <td class="currency">0.00</td>
+                </tr><tr>
+                    <td class="date_field">Mon 26 Dec</td>
+                    <td class="currency">963.98</td><td class="currency">400.65</td><td class="currency">33.10</td><td class="currency"><span class="negative">&mdash;</span></td><td class="currency">756.62</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">2,154.35</td>
+                    <td class="currency">0.00</td>
+                </tr><tr>
+                    <td class="date_field">Tue 27 Dec</td>
+                    <td class="currency">995.28</td><td class="currency">359.74</td><td class="currency">98.83</td><td class="currency">54.78</td><td class="currency">1,142.50</td><td class="currency">5,737.00</td>
+                    <td class="currency">8,388.13</td>
+                    <td class="currency">0.00</td>
+                </tr><tr>
+                    <td class="date_field">Wed 28 Dec</td>
+                    <td class="currency">1,356.30</td><td class="currency">382.36</td><td class="currency">104.10</td><td class="currency">28.79</td><td class="currency">890.13</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">2,761.68</td>
+                    <td class="currency">0.00</td>
+                </tr><tr>
+                    <td class="date_field">Thu 29 Dec</td>
+                    <td class="currency">1,140.52</td><td class="currency">168.56</td><td class="currency">64.80</td><td class="currency">16.23</td><td class="currency">627.15</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">2,017.26</td>
+                    <td class="currency">69.90</td>
+                </tr><tr>
+                    <td class="date_field">Fri 30 Dec</td>
+                    <td class="currency">470.37</td><td class="currency">116.60</td><td class="currency">65.56</td><td class="currency">81.03</td><td class="currency">332.05</td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">1,065.61</td>
+                    <td class="currency">71.97</td>
+                </tr><tr>
+                    <td class="date_field">Sat 31 Dec</td>
+                    <td class="currency">5.49</td><td class="currency"><span class="negative">&mdash;</span></td><td class="currency"><span class="negative">&mdash;</span></td><td class="currency"><span class="negative">&mdash;</span></td><td class="currency"><span class="negative">&mdash;</span></td><td class="currency"><span class="negative">&mdash;</span></td>
+                    <td class="currency">5.49</td>
+                    <td class="currency">32.98</td>
+                </tr>
+            <tr class="totals">
+                <th>TOTALS</th>
+                <td class="currency">62,591.43</td><td class="currency">15,084.02</td><td class="currency">5,532.70</td><td class="currency">3,627.08</td><td class="currency">50,006.50</td><td class="currency">17,048.47</td><td class="currency">153,890.20</td><td class="currency">2,370.82</td>
+            </tr>
+        </table>
+    </div>
+</html>

@@ -1,3 +1,4 @@
+import os
 import argparse
 import datetime
 
@@ -14,8 +15,14 @@ def main():
     parser.add_argument(
         '-m', '--month', type=int, help='Two digit month', required=True)
     parser.add_argument(
-        '-o', '--output', type=str, help='Output path', required=True)
+        '-o', '--output', type=str, help='Output directory',
+        default=os.getcwd())
     args = parser.parse_args()
+    save_name = 'Totals Report {} {}.pdf'.format(args.year, args.month)
+    if args.output.strip() == '.':
+        output_path = os.path.join(os.getcwd(), save_name)
+    else:
+        output_path = os.path.join(args.output, save_name)
     date = datetime.datetime(year=args.year, month=args.month, day=1)
     report = TotalsReport(date)
     daily_data, totals = report.make_report()
@@ -24,11 +31,8 @@ def main():
         'currencies': CURRENCIES,
         'daily_data': daily_data,
         'totals': totals}
-    table_html = template_to_pdf.get_html(TEMPLATE_PATH, variables)
-    with open('report.html', 'w') as outfile:
-        outfile.write(table_html)
     template_to_pdf.save_pdf_from_tamplate(
-        TEMPLATE_PATH, variables, args.output)
+        TEMPLATE_PATH, variables, output_path)
 
 if __name__ == "__main__":
     main()
