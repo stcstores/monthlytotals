@@ -1,5 +1,5 @@
 tabler
 exchange_rates
-git+ssh://lseagle@lsgit.uk/~/lsgit.uk/template_to_pdf.git@v1.0
-git+ssh://lseagle@lsgit.uk/~/lsgit.uk/pylinnworks.git@v1.3
-git+ssh://lseagle@lsgit.uk/~/lsgit.uk/stclocal.git@v1.6
+git+https://github.com/axevalley/template_to_pdf.git@v1.0
+git+https://github.com/stcstores/pylinnworks.git@v1.3
+git+https://github.com/stcstores/stclocal.git@v1.6
